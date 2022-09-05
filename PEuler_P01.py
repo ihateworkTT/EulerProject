@@ -1,17 +1,11 @@
-###https://projecteuler.net/problem=2
+###https://projecteuler.net/problem=1
 
-f1 = 1
-f2 = 1
-result = []
-f3 = f1 + f2
+n = 0
+result = 0
 
-while f3 < 4*10**6:
-	f3 = f1 + f2
-	if f3 % 2 == 0:
-		result.append(f3)
-	
-	f1 = f2
-	f2 = f3
+while n < 999:
+	n += 1
+	if n % 3 == 0 or n % 5 == 0:
+		result += n
 
-print(sum(result))
-
+print(result)
